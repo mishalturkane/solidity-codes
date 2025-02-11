@@ -1,0 +1,16 @@
+curl \
+  -X POST \
+  -H "Content-Type: application/json" \
+  --data '{
+    "jsonrpc": "2.0",
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "data": "0x70a08231000000000000000000000000587EFaEe4f308aB2795ca35A27Dff8c1dfAF9e3f"
+      },
+      "latest"
+    ],
+    "id": 1
+  }' \
+  <YOUR_RPC_ENDPOINT>
